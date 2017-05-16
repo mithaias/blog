@@ -63,9 +63,10 @@ if (!empty($_REQUEST['p'])) {
 
     } else {
         http_response_code(404);
-        echo "api not found.";
+        require "UI/pages/404.html";
     }
 } else {
     http_response_code(403);
     echo "Access Forbidden.";
 }
+?>

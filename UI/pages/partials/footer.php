@@ -7,7 +7,7 @@
                         <div class="col-sm-2 sm-margin-b-30">
                             <!-- List -->
                             <ul class="list-unstyled footer-list">
-                                <li class="footer-list-item"><a href="/">Home</a></li>
+                                <li class="footer-list-item"><a href="/acasa">Home</a></li>
                                 <li class="footer-list-item"><a href="/about.html">About</a></li>
                                 <li class="footer-list-item"><a href="/articles.html">Articles</a></li>
                                 <li class="footer-list-item"><a href="/login.html">Login</a></li>
@@ -69,6 +69,7 @@
         <script type="text/javascript" src="/UI/views/logout.js"></script>
         <script type="text/javascript" src="/UI/views/newArt.js"></script>
         <script type="text/javascript" src="/UI/views/signup.js"></script>
+        <script type="text/javascript" src="/UI/views/searchBox.js"></script>
 
         <!-- SOME PLUGINS AND SOME SCRIPTS
         ARE LOADED IN THEYR SPECIFIC PAGES-->

@@ -24,15 +24,15 @@ function onHtmlLoaded() {
 
                 var articleElem = '<div>';
                 if (imgSrc && imgSrc !== '') {
-                    articleElem += "<img src='/blog/uploads/" + articles.models[i].main_image_url + "' >";
+                    articleElem += "<img src='/uploads/" + articles.models[i].main_image_url + "' >";
                 }
 
-                articleElem += "<h1>" + articles.models[i].title + "</h1> <li>" + articles.models[i].creation_date + "</li> </br> <p>" + articles.models[i].content + "</p></div> <h2></h2>";
+                articleElem += "<h1 class='articleTitle'>" + articles.models[i].title + "</h1> <li>" + articles.models[i].creation_date + "</li> </br> <p class='articleContent'>" + articles.models[i].content + "</p></div> <h2></h2>";
                 //	articleElem.html(articles.models[i].title)
 
                 //articleElem.on("click", goToArticlePage);
                 container.append(articleElem);
-                console.log(articles.models[i])
+                console.log(articles.models[i]);
             }
             else {
                 console.log("success");

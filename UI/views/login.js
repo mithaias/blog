@@ -7,8 +7,8 @@ function onHtmlLoaded() {
     var loginModel;
     loginBtn.on("click", function() {
         var emailValue = $("[name='user_email']").val();
-        var passValue =$("[name='user_password']").val();
-        
+        var passValue = $("[name='user_password']").val();
+
         loginModel = new Login({
             email: emailValue,
             pass: passValue
@@ -16,15 +16,14 @@ function onHtmlLoaded() {
         var loginReq = loginModel.signIn();
         loginReq.done(redirectUserToArticlesPage);
     });
+
     function redirectUserToArticlesPage() {
-        
+
         if (loginModel.isLogged) {
-             window.location.href = "https://blog-andrei-4.c9users.io/UI/pages/articles.html";
+            window.location.href = "https://blog-andrei-4.c9users.io/articles";
         }
         else {
-            alert ("login failed");
+            alert("login failed");
         }
-               
-
     }
 }

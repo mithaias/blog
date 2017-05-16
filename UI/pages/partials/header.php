@@ -73,27 +73,35 @@
 
                                 <!-- About -->
                                 <li class="nav-item">
-                                    <a class="nav-item-child" href="/about.html">
+                                    <a class="nav-item-child" href="/about">
                                         About
                                     </a>
                                 </li>
                                 <!-- End About -->
-                                
+
                                 <!-- Articles -->
                                 <li class="nav-item">
-                                    <a class="nav-item-child" href="/articles.html">
+                                    <a class="nav-item-child" href="/articles">
                                         Articles
                                     </a>
                                 </li>
                                 <!-- End Articles -->
-                                
+
                                 <!-- Login -->
                                 <li class="nav-item">
-                                    <a class="nav-item-child" href="/login.html">
+                                    <a class="nav-item-child" href="/login">
                                         Login
                                     </a>
                                 </li>
                                 <!-- End Login -->
+
+                                <!-- Search Bar -->
+                                <li class="nav-item">
+                                    </br>
+                                    <input class="nav-item" type='text' id='link_id'>
+                                    <input class="nav-item" type='button' id='link' value='Search' onClick='javascript:goTo()'>
+                                </li>
+                                <!-- End Search Bar -->
                             </ul>
                         </div>
                     </div>
