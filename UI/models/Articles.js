@@ -25,6 +25,29 @@ Articles.prototype.removeArticle = function(articleId) {
 	//here we will search for article model by id
 	//and we remove it from models array and from 
 	//server/localStorage
+	var formData = new FormData();
+		
+	formData.delete("main_image_url",articleId.img);
+	formData.delete("title", articleId.title);
+	formData.delete("content", articleId.content);
+	formData.delete("category_id", articleId.category_id);
+    formData.delete("published", articleId.published);
+    
+	var config = {
+            url: "/api/articles/delete",
+            method: "DELETE",
+            data: formData,
+
+            processData: false,
+            contentType: false,
+            success: function(resp) {
+                console.log ("succes");
+            },
+            error: function(xhr, status, error) {
+            alert("Oops!Something is wrong " + error);
+        },
+	};
+	return $.ajax(config);
 };
 
 Articles.prototype.save = function(articleData) {
@@ -50,6 +73,6 @@ Articles.prototype.save = function(articleData) {
         error: function(xhr, status, error) {
             alert("Oops!Something is wrong " + error);
         },
-        };
-        return $.ajax(config);
+    };
+    return $.ajax(config);
 };

@@ -27,7 +27,16 @@ function onHtmlLoaded() {
                     articleElem += "<img src='/uploads/" + articles.models[i].main_image_url + "' >";
                 }
 
-                articleElem += "<h1 class='articleTitle'>" + articles.models[i].title + "</h1> <li>" + articles.models[i].creation_date + "</li> </br> <p class='articleContent'>" + articles.models[i].content + "</p></div> <h2></h2>";
+                articleElem +=
+                    // Title
+                    "<h1 class='articleTitle'>" + articles.models[i].title + "</h1>" +
+
+                    //Creation Date
+                    "<h6>Published on " + articles.models[i].creation_date + "</h6>" +
+
+                    // Article Content
+                    "<div class='row '> <div class = 'col-sm-7 sm-margin-b-50'> <div class='margin-b-30'><p>" + articles.models[i].content + "</p></div> </div> </div>";
+
                 //	articleElem.html(articles.models[i].title)
 
                 //articleElem.on("click", goToArticlePage);

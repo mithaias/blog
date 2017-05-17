@@ -7,7 +7,7 @@
                         <div class="col-sm-2 sm-margin-b-30">
                             <!-- List -->
                             <ul class="list-unstyled footer-list">
-                                <li class="footer-list-item"><a href="/acasa">Home</a></li>
+                                <li class="footer-list-item"><a href="/">Home</a></li>
                                 <li class="footer-list-item"><a href="/about">About</a></li>
                                 <li class="footer-list-item"><a href="/articles">Articles</a></li>
                                 <li class="footer-list-item"><a href="/login">Login</a></li>
@@ -27,8 +27,7 @@
                         <div class="col-sm-3">
                             <!-- List -->
                             <ul class="list-unstyled footer-list">
-                                <li class="footer-list-item"><a href="http://keenthemes.com/">Privacy Policy</a></li>
-                                <li class="footer-list-item"><a href="http://keenthemes.com/">Terms &amp; Conditions</a></li>
+                                <li class="footer-list-item"><a href="http://keenthemes.com/">Keen Themes</a></li>
                             </ul>
                             <!-- End List -->
                         </div>

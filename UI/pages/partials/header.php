@@ -53,7 +53,7 @@
 
                         <!-- Logo -->
                         <div class="navbar-logo">
-                            <a class="navbar-logo-wrap" href="/acasa">
+                            <a class="navbar-logo-wrap" href="/">
                                 <img class="navbar-logo-img" src="/UI/img/logo.png" alt="Own Logo">
                             </a>
                         </div>
@@ -66,7 +66,7 @@
                             <ul class="navbar-nav navbar-nav-right">
                                 <!-- Home -->
                                 <li class="nav-item">
-                                    <a class="nav-item-child" href="/acasa">
+                                    <a class="nav-item-child" href="/">
                                         Home
                                     </a>
                                 </li>

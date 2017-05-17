@@ -12,7 +12,7 @@ Signup.prototype.signUp = function(credentials) {
     formData.append("repass", credentials.repass);
     console.log(credentials);
     var config = {
-        url: "https://blog-andrei-4.c9users.io/signup",
+        url: "/api/signup",
         method: "POST",
         data: formData,
         processData: false,
@@ -24,12 +24,10 @@ Signup.prototype.signUp = function(credentials) {
                     // alert ("Check network for response! Fixing the error in progress.");
                     console.log("error in resp");
                     that.isCreated = false;
-                }
-                else {
+                }else {
                     that.isCreated = true;
                 }
             }
-
         },
         error: function(xhr, status, error) {
             alert("Oops!Something is wrong " + xhr.responseText);

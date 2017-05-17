@@ -1,7 +1,6 @@
 <?php
     // UI routes
     $routes['/'] = array("class"=>"Articles", "method"=>"getAll", "view" => 'index.html', 'scripts' => 'index.scripts.html');
-    $routes['/acasa'] = array("class"=>"Articles", "method"=>"getAll", "view" => 'index.html', 'scripts' => 'index.scripts.html');
     $routes['/about'] = array("class"=>"Articles", "method"=>"getItem", "view" => "about.html", 'scripts' => 'about.scripts.html');
     $routes['/article'] = array("class"=>"Articles", "method"=>"getItem", "view" => "article.html", 'scripts' => 'article.scripts.html');
     $routes['/articles'] = array("class"=>"Articles", "method"=>"getAll", "view" => 'articles.html', 'scripts' => 'articles.scripts.html');

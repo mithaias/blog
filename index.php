@@ -5,12 +5,12 @@ require "app/configs/config.php";
 require "app/configs/routes.php";
 
 const BLOG = '';
+$url = isset($_REQUEST['p']) ? '/' . $_REQUEST['p'] : '/';
 
-if (!empty($_REQUEST['p'])) {
-    $url = '/' . $_REQUEST['p'];
+//var_dump($_REQUEST);
+
+if (!empty($url)) {
     $page = str_replace(BLOG,'',$url);
-
-    //var_dump($url);
 
     if (array_key_exists($page, $routes)) {
         $class = $routes[$page]["class"]; // "Articles"
@@ -67,6 +67,6 @@ if (!empty($_REQUEST['p'])) {
     }
 } else {
     http_response_code(403);
-    echo "Access Forbidden.";
+    require "UI/pages/undefined.html";;
 }
 ?>
