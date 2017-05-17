@@ -11,16 +11,43 @@
 
         <div class="row">
             <div class="col-md-5 col-sm-7">
-                <form>
+                <form method="post">
                     <div class="margin-b-10">
                         <input class="form-control" type="text" name="title" placeholder="Title" />
                     </div>
                     <div class="margin-b-10">
                         <textarea class="form-control" name="content" placeholder="Write content here."></textarea>
                     </div>
-                    <div class="margin-b-10">
-                        <button class="btn-theme btn-theme-sm btn-base-bg text-uppercase" type="file" name="main_image_url">Chose image</button>
+                </form>
+                <form>
+                    <div class="margin-b-10" method="post" enctype="multipart/form-data">
+                        <input type="file" id="article_file" name="main_image_url" accept="image/*" />
                     </div>
+                </form>
+                <form method="post">
+                    <!--Category input-->
+                    <div id='category-wrapper'>
+                        <label>Category:</label>
+                        <br>
+                        <select id='categories-art-sect'>
+                        <option value='' selected>Choose Category</option>
+                    </select>
+                        <div id='error-category' class='tooltip' input-id='categories-art-sect'>
+                            <p class='tooltiptext right'>*</p>
+                        </div>
+                        <input type="submit" name="manageCategoriesButton" value="Manage Categories" />
+                    </div>
+
+                    <!--Publish input-->
+                    <div>
+                        <label for="publish">Publish:</label>
+                        <input type="radio" name="publish" value='1' /> <span>Yes</span>
+                        <input type="radio" name="publish" value='0' checked/><span>No</span>
+                        <div id='warning-publish' class='error-container no-display'>
+                            <p class='warningtext'>*</p>
+                        </div>
+                    </div>
+
                     <button id="save_article" class="btn-theme btn-theme-sm btn-base-bg text-uppercase">Submit</button>
                 </form>
             </div>

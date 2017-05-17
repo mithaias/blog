@@ -3,27 +3,29 @@
 $(document).ready(onHtmlLoaded);
 
 function onHtmlLoaded() {
-    var loginBtn = $("#login_btn");
-    var loginModel;
-    loginBtn.on("click", function() {
-        var emailValue = $("[name='user_email']").val();
-        var passValue = $("[name='user_password']").val();
+    function login() {
+        var loginBtn = $("#login_btn");
+        var loginModel;
+        loginBtn.on("click", function() {
+            var emailValue = $("[name='user_email']").val();
+            var passValue = $("[name='user_password']").val();
 
-        loginModel = new Login({
-            email: emailValue,
-            pass: passValue
+            loginModel = new Login({
+                email: emailValue,
+                pass: passValue
+            });
+            var loginReq = loginModel.signIn();
+            loginReq.done(redirectUserToArticlesPage);
         });
-        var loginReq = loginModel.signIn();
-        loginReq.done(redirectUserToArticlesPage);
-    });
 
-    function redirectUserToArticlesPage() {
+        function redirectUserToArticlesPage() {
 
-        if (loginModel.isLogged) {
-            window.location.href = "https://blog-andrei-4.c9users.io/articles";
-        }
-        else {
-            alert("login failed");
+            if (loginModel.isLogged) {
+                window.location.href = "https://blog-andrei-4.c9users.io/articles";
+            }
+            else {
+                alert("login failed");
+            }
         }
     }
 }

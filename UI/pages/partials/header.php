@@ -22,6 +22,7 @@
 
         <!-- GLOBAL MANDATORY STYLES -->
         <link href="//fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
         <link href="/UI/HTML/vendor/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css"/>
         <link href="/UI/HTML/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
 
@@ -52,7 +53,7 @@
 
                         <!-- Logo -->
                         <div class="navbar-logo">
-                            <a class="navbar-logo-wrap" href="/">
+                            <a class="navbar-logo-wrap" href="/acasa">
                                 <img class="navbar-logo-img" src="/UI/img/logo.png" alt="Own Logo">
                             </a>
                         </div>

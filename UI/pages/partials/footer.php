@@ -8,9 +8,9 @@
                             <!-- List -->
                             <ul class="list-unstyled footer-list">
                                 <li class="footer-list-item"><a href="/acasa">Home</a></li>
-                                <li class="footer-list-item"><a href="/about.html">About</a></li>
-                                <li class="footer-list-item"><a href="/articles.html">Articles</a></li>
-                                <li class="footer-list-item"><a href="/login.html">Login</a></li>
+                                <li class="footer-list-item"><a href="/about">About</a></li>
+                                <li class="footer-list-item"><a href="/articles">Articles</a></li>
+                                <li class="footer-list-item"><a href="/login">Login</a></li>
                             </ul>
                             <!-- End List -->
                         </div>
@@ -57,14 +57,14 @@
         ?>
 
         <!-- ALL MODELS LOADED HERE -->
-        <script type="text/javascript" src="/UI/models/Articles.js"></script>
         <script type="text/javascript" src="/UI/models/Article.js"></script>
+        <script type="text/javascript" src="/UI/models/Articles.js"></script>
         <script type="text/javascript" src="/UI/models/Login.js"></script>
         <script type="text/javascript" src="/UI/models/Signup.js"></script>
 
         <!-- ALL VIEWS LOADED HERE -->
-        <script type="text/javascript" src="/UI/views/articles.js"></script>
         <script type="text/javascript" src="/UI/views/article.js"></script>
+        <script type="text/javascript" src="/UI/views/articles.js"></script>
         <script type="text/javascript" src="/UI/views/login.js"></script>
         <script type="text/javascript" src="/UI/views/logout.js"></script>
         <script type="text/javascript" src="/UI/views/newArt.js"></script>

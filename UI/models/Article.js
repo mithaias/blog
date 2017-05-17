@@ -1,4 +1,4 @@
-function Article(options){
+function Article(options) {
     this.id = options.id;
     this.title = options.title;
     this.category = options.category || "default topic";
@@ -6,12 +6,8 @@ function Article(options){
     this.main_image_url = options.main_image_url;
     this.creation_date = options.creation_date || new Date();
 }
-Article.prototype.update = function(data){
+Article.prototype.update = function(data) {
     //here we should save the data to the server
     //do an AJAX request or save it in the local storage
-    
-    
-    //roijr3ujrrkroffoiejr 
-    
-    // new branch
+
 };
